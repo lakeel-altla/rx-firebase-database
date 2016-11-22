@@ -1,6 +1,6 @@
 # rx-firebase-database
 
-rx-gms-tasks is a library that provides conversion from a Query object of Firebase Realtime Database to a RxJava object.
+rx-firebase-database is a library that provides conversion from a Query object of Firebase Realtime Database to a RxJava object.
 
 ## Usage
 
