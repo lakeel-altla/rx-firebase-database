@@ -44,7 +44,7 @@ public final class RxFirebaseQuery {
 
                     @Override
                     public void onCancelled(DatabaseError error) {
-                        subscriber.onError(new DatabaseErrorException(error));
+                        subscriber.onError(error.toException());
                     }
                 });
             }
@@ -74,7 +74,7 @@ public final class RxFirebaseQuery {
 
                     @Override
                     public void onCancelled(DatabaseError error) {
-                        subscriber.onError(new DatabaseErrorException(error));
+                        subscriber.onError(error.toException());
                     }
                 });
             }
@@ -103,7 +103,7 @@ public final class RxFirebaseQuery {
 
                     @Override
                     public void onCancelled(DatabaseError error) {
-                        subscriber.onError(new DatabaseErrorException(error));
+                        subscriber.onError(error.toException());
                     }
                 });
             }
@@ -132,7 +132,7 @@ public final class RxFirebaseQuery {
 
                     @Override
                     public void onCancelled(DatabaseError error) {
-                        subscriber.onError(new DatabaseErrorException(error));
+                        subscriber.onError(error.toException());
                     }
                 });
             }
